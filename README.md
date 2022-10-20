@@ -13,12 +13,12 @@ What I found was that of the information recorded, there was very little actual 
 ## My best model (and fastest; executing in milliseconds), was a tuned Logistic Regression model with the addition of PCA. This model, however, still only had an accuracy score of 0.53 (full classification report inside project notebook). The model can be summarized below:
 
 # Final model to put into production: Logistical Regression:
-  - Hyperparametrs: C = 1, solver = 'saga', penalty = 'l1', random_state = 42, max_iter = 10000
+  - Hyperparameters: C = 1, solver = 'saga', penalty = 'l1', random_state = 42, max_iter = 10000
     - With the addition of PCA(n_components = 16)
 
 ## The reason behind this is simple: this generates the most balanced predictions.
 ## While the Logistic Regression model is still poor, it has the most balance in predictions, and is incredibly quick. 
 # This model could be put into practice only as a way to increase the amount of data fed into the model, and to increase it's reliability over time. This should NOT be relied on to make clinical predictions.
-### This models performance can be improved by gathering more data, and adding more highly correlated data points (chemical blood concentrations, co-morbitities, etc), with the help of a subject matter expert.
+### This models performance can be improved by gathering more data, and adding more highly correlated data points (chemical blood concentrations, co-morbidities, etc), with the help of a subject matter expert.
 - ## This model, to be truly successful, needs more information correlated to stage 1 and stage 2 cirrhosis. As is the case with all medical condition, the earlier the diagnosis, the better.
 
