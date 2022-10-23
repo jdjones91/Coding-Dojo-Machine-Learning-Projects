@@ -17,7 +17,8 @@ My best model (and fastest; executing in milliseconds), was a tuned Logistic Reg
 
 The reason behind this is simple: this generates the most balanced predictions. This model predicted some stage 2, 3, and 4 cirrhosis cases, but did not correctly predict stage 1. The other model, however, did not correctly predict stage 1 or 2. Therefore, the Logistic Regression model seems to have learned the difference between stages most effectively. This is largely due to class imbalance in our target (Stage), which can be visulized with a histogram.
 
-<img width="382" alt="Histogram of Stage (of Cirrhosis)" src="https://user-images.githubusercontent.com/109368648/197408388-7990a27f-3cde-4ead-a3ab-13df606fe703.png">
+
+Number of cases of cirrhosis by stage (1, 2, 3, 4)
 
   - Prediction of later stages (more severe illness) was most likely more successful because the feature values were more extreme. In addition, our model had more stage 3 and stage 4 targets to learn about. 
  
