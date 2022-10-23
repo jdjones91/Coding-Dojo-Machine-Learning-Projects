@@ -13,7 +13,7 @@ Another interesting finding was that as the Stage (aka severity) of cirrhosis in
 
 <img width="396" alt="Screen Shot 2022-10-23 at 12 29 45 PM" src="https://user-images.githubusercontent.com/109368648/197409523-b8b2a1c7-7c9f-43c9-8627-9bb111be826b.png">
 
-My best model (and fastest; executing in milliseconds), was a tuned Logistic Regression model with the addition of PCA. This model, however, still only had an accuracy score of 0.53 (full classification report inside project notebook). The model can be summarized below:
+Overall, my best model (and fastest; executing in milliseconds), was a tuned Logistic Regression model with the addition of PCA. This model, however, still only had an accuracy score of 0.53 (full classification report inside project notebook). The model can be summarized below:
 
 - Final model to put into production: Logistical Regression:
   - Hyperparameters: C = 1, solver = 'saga', penalty = 'l1', random_state = 42, max_iter = 10000
@@ -24,11 +24,9 @@ The reason behind this is simple: this generates the most balanced predictions. 
 <img width="389" alt="Screen Shot 2022-10-23 at 12 19 44 PM" src="https://user-images.githubusercontent.com/109368648/197408985-10b1f82a-3999-43a2-a11d-7dd1cb5571e6.png">
 Number of cases of cirrhosis by stage (1, 2, 3, 4)
 
-
   - Prediction of later stages (more severe illness) was most likely more successful because the feature values were more extreme. In addition, our model had more stage 3 and stage 4 targets to learn about. 
 
-
+**In Summary:**
 This model, currently, could be put into practice only as a way to increase the amount of data fed into the model, and to increase it's reliability over time. This should not be relied on to make clinical predictions.
  - This model's performance can be improved by gathering more data, and adding more highly correlated data points (chemical blood concentrations, co-morbidities, etc), with the help of a subject matter expert.
 - This model, to be truly successful, needs more information correlated to stage 1 and stage 2 cirrhosis. As is the case with all medical condition, the earlier the diagnosis, the better.
-
