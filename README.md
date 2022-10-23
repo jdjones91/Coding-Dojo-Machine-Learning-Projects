@@ -15,9 +15,10 @@ My best model (and fastest; executing in milliseconds), was a tuned Logistic Reg
   - Hyperparameters: C = 1, solver = 'saga', penalty = 'l1', random_state = 42, max_iter = 10000
     - With the addition of PCA(n_components = 16)
 
-## The reason behind this is simple: this generates the most balanced predictions.
-## While the Logistic Regression model is still poor, it has the most balance in predictions, and is incredibly quick. 
-# This model could be put into practice only as a way to increase the amount of data fed into the model, and to increase it's reliability over time. This should NOT be relied on to make clinical predictions.
-### This models performance can be improved by gathering more data, and adding more highly correlated data points (chemical blood concentrations, co-morbidities, etc), with the help of a subject matter expert.
-- ## This model, to be truly successful, needs more information correlated to stage 1 and stage 2 cirrhosis. As is the case with all medical condition, the earlier the diagnosis, the better.
+The reason behind this is simple: this generates the most balanced predictions. This model predicted some stage 2, 3, and 4 cirrhosis cases, but did not correctly predict stage 1. The other model, however, did not correctly predict stage 1 or 2. Therefore, the Logistic Regression model seems to have learned the difference between stages most effectively.
+  - Prediction of later stages (more severe illness) was most likely more successful because the feature values were more extreme. In addition, our model had more stage 3 and stage 4 targets to learn about. 
+ 
+This model, currently, could be put into practice only as a way to increase the amount of data fed into the model, and to increase it's reliability over time. This should not be relied on to make clinical predictions.
+ - This model's performance can be improved by gathering more data, and adding more highly correlated data points (chemical blood concentrations, co-morbidities, etc), with the help of a subject matter expert.
+- This model, to be truly successful, needs more information correlated to stage 1 and stage 2 cirrhosis. As is the case with all medical condition, the earlier the diagnosis, the better.
 
