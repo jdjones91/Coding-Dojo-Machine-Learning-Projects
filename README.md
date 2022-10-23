@@ -1,7 +1,7 @@
 # Coding-Dojo-Machine-Learning-Projects
 
 ## For this project I took a Liver Cirrhosis dataset from Kaggle (link in project) and built several ML models to see if the information given, could be used to predict the stage(stage 1, stage 2, stage 3, stage 4) of patient Cirrhosis, and ultimately put into production.
-  - About half of the work found in 'Project 2, Final' is related to data cleaning and explorations, and the other half dedicated to building, tuning, and comparing ML models. *This project contains a lot of commentary and some extra pieces of code for demonstration purposes.*
+  - About half of the work here is related to data cleaning and explorations, and the other half dedicated to building, tuning, and comparing ML models. *This project contains a lot of commentary and some extra pieces of code for demonstration purposes.*
 
 What I found was that of the information recorded, there was very little actual correlation to our target ('Stage' of cirrhosis). Despite this, I executed and tuned 3 separate classification models, then applied PCA to the best 2 (which, after tuning, actually had identical accuracy scores on the testing set).
 
