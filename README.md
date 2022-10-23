@@ -9,9 +9,9 @@ What I found was that of the information recorded, there was very little actual 
 
 - Heatmap showing correlation of numerical data
 
-## My best model (and fastest; executing in milliseconds), was a tuned Logistic Regression model with the addition of PCA. This model, however, still only had an accuracy score of 0.53 (full classification report inside project notebook). The model can be summarized below:
+My best model (and fastest; executing in milliseconds), was a tuned Logistic Regression model with the addition of PCA. This model, however, still only had an accuracy score of 0.53 (full classification report inside project notebook). The model can be summarized below:
 
-# Final model to put into production: Logistical Regression:
+- Final model to put into production: Logistical Regression:
   - Hyperparameters: C = 1, solver = 'saga', penalty = 'l1', random_state = 42, max_iter = 10000
     - With the addition of PCA(n_components = 16)
 
