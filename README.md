@@ -24,6 +24,7 @@ Number of cases of cirrhosis by stage (1, 2, 3, 4)
   - Prediction of later stages (more severe illness) was most likely more successful because the feature values were more extreme. In addition, our model had more stage 3 and stage 4 targets to learn about. 
 
 Another interesting finding was that as the Stage (aka severity) of cirrhosis increases, the N_Days (number of days from diagnosis to treatment or death of the patient) decreases. This is probably do to expediting care for those with a more sever condition, (transplant, etc) or, due to death of the more ill patients. Although the correlation is NEGATIVE, that does not mean it doesn't have a trend. This is also the most strongly correlated single feature to our target.
+
 <img width="396" alt="Screen Shot 2022-10-23 at 12 29 45 PM" src="https://user-images.githubusercontent.com/109368648/197409523-b8b2a1c7-7c9f-43c9-8627-9bb111be826b.png">
 
 
