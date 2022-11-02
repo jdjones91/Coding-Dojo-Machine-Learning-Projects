@@ -1,4 +1,4 @@
-# Coding-Dojo-Machine-Learning-Projects
+# Coding-Dojo-Project-2: Predicting Stage of Liver Cirrhosis
 
 ## For this project I took a Liver Cirrhosis dataset from Kaggle (link in project) and built several ML models to see if the information given, could be used to predict the stage(stage 1, stage 2, stage 3, stage 4) of patient Cirrhosis, and ultimately put into production.
   - About half of the work here is related to data cleaning and explorations, and the other half dedicated to building, tuning, and comparing ML models. *This project contains a lot of commentary and some extra pieces of code for demonstration purposes.*
