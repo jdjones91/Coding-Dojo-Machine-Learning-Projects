@@ -28,5 +28,5 @@ Number of cases of cirrhosis by stage (1, 2, 3, 4)
 
 **In Summary:**
 This model, currently, could be put into practice only as a way to increase the amount of data fed into the model, and to increase it's reliability over time. This should not be relied on to make clinical predictions.
- - This model's performance can be improved by gathering more data, and adding more highly correlated data points (chemical blood concentrations, co-morbidities, etc), with the help of a subject matter expert.
+ - This model's performance can be improved by gathering more data, and adding more highly correlated data points (chemical blood concentrations, co-morbidities, etc.), with the help of a subject matter expert.
 - This model, to be truly successful, needs more information correlated to stage 1 and stage 2 cirrhosis. As is the case with all medical condition, the earlier the diagnosis, the better.
